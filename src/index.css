@@ -1,0 +1,12 @@
+@import "tailwindcss";
+@theme {
+  --color-paper: #f6f2ea; --color-sand: #ebe4d6; --color-navy: #0e1a2b; --color-navy2: #17273d;
+  --color-safety: #f08a24; --color-slate: #5b6676; --color-rule: #d9d1c0;
+  --font-display: "Archivo", system-ui, sans-serif; --font-body: "Instrument Sans", system-ui, sans-serif;
+}
+html { scroll-behavior: smooth; scroll-padding-top: 5rem; }
+body { background: var(--color-paper); color: var(--color-navy); font-family: var(--font-body); overflow-x: hidden; }
+:focus-visible { outline: 2px solid var(--color-safety); outline-offset: 3px; }
+.display { font-family: var(--font-display); font-weight: 900; font-stretch: 110%; text-transform: uppercase; line-height: .92; letter-spacing: -.01em; }
+.blueprint { background-image: linear-gradient(rgba(255,255,255,.06) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.06) 1px,transparent 1px); background-size: 48px 48px; }
+@media (prefers-reduced-motion: reduce) { html { scroll-behavior: auto; } }
